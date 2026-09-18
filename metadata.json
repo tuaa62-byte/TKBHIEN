@@ -1,0 +1,6 @@
+{
+  "name": "Quản Lý TKB, Lịch Báo Giảng & KHBD Chuẩn CV 2345",
+  "description": "Hệ thống quản lý Thời khóa biểu, Lịch báo giảng, Kế hoạch bài dạy (KHBD) theo Công văn 2345/BGDĐT và ngân hàng Phiếu bài tập trắc nghiệm cuối tuần đồng bộ theo tuần từ Loigiaihay.com.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
