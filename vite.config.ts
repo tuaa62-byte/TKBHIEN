@@ -7,7 +7,6 @@ import {defineConfig, Plugin} from 'vite';
 // LINT.IfChange(aistudio_media_plugin)
 function aistudioMediaPlugin(): Plugin {
   return {
-    Base:'/TKBHIEN/',
     name: 'vite-plugin-aistudio-media',
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
@@ -67,6 +66,7 @@ function aistudioMediaPlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
+    base: process.env.GITHUB_ACTIONS ? '/TKBHIEN/' : './',
     plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
     resolve: {
       alias: {
